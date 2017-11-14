@@ -1,0 +1,3066 @@
+{
+  "@context" : {
+    "road-tunnel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#road-tunnel"
+    },
+    "GeonameConcept" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#GeonameConcept"
+    },
+    "thumbnailImg" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#thumbnailImg",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hole" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hole"
+    },
+    "overfalls" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#overfalls"
+    },
+    "tree-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tree-s-"
+    },
+    "historical-fourth-order-administrative-division" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#historical-fourth-order-administrative-division"
+    },
+    "trail" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#trail"
+    },
+    "sound" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sound"
+    },
+    "osm_new_transport_areas" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_transport_areas"
+    },
+    "spatial" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#spatial",
+      "@type" : "@id"
+    },
+    "sheepfold" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sheepfold"
+    },
+    "crosses" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#crosses",
+      "@type" : "@id"
+    },
+    "crater-lake" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#crater-lake"
+    },
+    "osm_new_mainroads_gen0-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen0-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "historical-second-order-administrative-division" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#historical-second-order-administrative-division"
+    },
+    "sugar-mill" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sugar-mill"
+    },
+    "wildlife-reserve" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wildlife-reserve"
+    },
+    "mangrove-swamp" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mangrove-swamp"
+    },
+    "sluice" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sluice"
+    },
+    "wadies" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wadies"
+    },
+    "fan" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fan"
+    },
+    "talus-slope" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#talus-slope"
+    },
+    "aerodrome" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#aerodrome"
+    },
+    "caldera" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#caldera"
+    },
+    "irrigated-field-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#irrigated-field-s-"
+    },
+    "breakwater" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#breakwater"
+    },
+    "reef-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#reef-s-"
+    },
+    "countryCode" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#countryCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "pine-grove" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pine-grove"
+    },
+    "ranch-es-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ranch-es-"
+    },
+    "dam" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#dam"
+    },
+    "bar" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#bar"
+    },
+    "icecap-dome" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#icecap-dome"
+    },
+    "adminName2" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Hydrographic" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"
+    },
+    "proximity" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#proximity",
+      "@type" : "@id"
+    },
+    "abandoned-populated-place" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-populated-place"
+    },
+    "osm_new_amenities-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_amenities-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "facility-center" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#facility-center"
+    },
+    "tabla1-isWholeOf-tabla2" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tabla1-isWholeOf-tabla2",
+      "@type" : "@id"
+    },
+    "oil-pumping-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oil-pumping-station"
+    },
+    "osm_new_railways_gen1-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen1-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "historical-capital-of-a-political-entity" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#historical-capital-of-a-political-entity"
+    },
+    "blowhole-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#blowhole-s-"
+    },
+    "chrome-mine-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#chrome-mine-s-"
+    },
+    "osm_new_railways_gen1-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen1-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "seachannels" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#seachannels"
+    },
+    "Spot" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"
+    },
+    "tabla1-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tabla1-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "intermittent-oxbow-lake" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intermittent-oxbow-lake"
+    },
+    "wikipediaUrl" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wikipediaUrl",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "arrugado" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#arrugado"
+    },
+    "free-trade-zone" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#free-trade-zone"
+    },
+    "intermittent-lake" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intermittent-lake"
+    },
+    "osm_new_buildings-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_buildings-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "province" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#province"
+    },
+    "rapids" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rapids"
+    },
+    "grassland" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#grassland"
+    },
+    "osm_new_landusages-z_order" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages-z_order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "stream" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#stream"
+    },
+    "airbase" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#airbase"
+    },
+    "slide" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#slide"
+    },
+    "wreck" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wreck"
+    },
+    "sewage-treatment-plant" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sewage-treatment-plant"
+    },
+    "metro-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#metro-station"
+    },
+    "osm_new_landusages-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "asphalt-lake" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#asphalt-lake"
+    },
+    "moor-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#moor-s-"
+    },
+    "valley" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#valley"
+    },
+    "cairn" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cairn"
+    },
+    "castle" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#castle"
+    },
+    "edu" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#edu"
+    },
+    "arctic-land" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#arctic-land"
+    },
+    "AdministrativeBoundary" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#AdministrativeBoundary"
+    },
+    "Road" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Road"
+    },
+    "camp-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#camp-s-"
+    },
+    "osm_new_waterways-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterways-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "racetrack" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#racetrack"
+    },
+    "university" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#university"
+    },
+    "labor-camp" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#labor-camp"
+    },
+    "section-of-waterfall-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-waterfall-s-"
+    },
+    "osm_new_motorways-ref" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways-ref",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "seachannel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#seachannel"
+    },
+    "caravan-route" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#caravan-route"
+    },
+    "guest-house" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#guest-house"
+    },
+    "stock-route" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#stock-route"
+    },
+    "osm_new_amenities-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_amenities-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "section-of-reef" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-reef"
+    },
+    "sanatorium" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sanatorium"
+    },
+    "levee" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#levee"
+    },
+    "sandy-desert" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sandy-desert"
+    },
+    "marsh-es-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#marsh-es-"
+    },
+    "osm_new_railways_gen1-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen1-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "industrial-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#industrial-area"
+    },
+    "atoll-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#atoll-s-"
+    },
+    "continental-rise" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#continental-rise"
+    },
+    "gap" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gap"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "osm_new_waterareas_gen1-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterareas_gen1-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "promenade" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#promenade"
+    },
+    "osm_new_mainroads-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_motorways_gen1-bridge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen1-bridge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "park" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#park"
+    },
+    "osm_new_aeroways-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_aeroways-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_landusages-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages-area",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "tabla1-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tabla1-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "oil-pipeline-terminal" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oil-pipeline-terminal"
+    },
+    "historical-populated-place" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#historical-populated-place"
+    },
+    "park-gate" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#park-gate"
+    },
+    "factory" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#factory"
+    },
+    "jetty" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#jetty"
+    },
+    "adminName5" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName5",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "irrigation-system" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#irrigation-system"
+    },
+    "sabkha-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sabkha-s-"
+    },
+    "abandoned-canal" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-canal"
+    },
+    "mangrove-island" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mangrove-island"
+    },
+    "gate" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gate"
+    },
+    "sand-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sand-area"
+    },
+    "railroad-yard" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#railroad-yard"
+    },
+    "corral-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#corral-s-"
+    },
+    "logging-camp" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#logging-camp"
+    },
+    "airfield" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#airfield"
+    },
+    "seat-of-a-fourth-order-administrative-division" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#seat-of-a-fourth-order-administrative-division"
+    },
+    "business-center" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#business-center"
+    },
+    "mission" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mission"
+    },
+    "osm_new_mainroads-z_order" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads-z_order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "battlefield" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#battlefield"
+    },
+    "shelf" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#shelf"
+    },
+    "landmark" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#landmark"
+    },
+    "osm_new_buildings-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_buildings-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "steps" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#steps"
+    },
+    "diplomatic-facility" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#diplomatic-facility"
+    },
+    "karst-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#karst-area"
+    },
+    "osm_new_minorroads-z_order" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_minorroads-z_order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "osm_new_railways_gen1-tunnel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen1-tunnel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "abandoned-factory" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-factory"
+    },
+    "osm_new_transport_areas-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_transport_areas-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "osm_new_motorways_gen1-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen1-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "slope" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#slope"
+    },
+    "waterhole-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#waterhole-s-"
+    },
+    "opera-house" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#opera-house"
+    },
+    "reservation" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#reservation"
+    },
+    "section-of-plateau" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-plateau"
+    },
+    "tunnel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tunnel"
+    },
+    "pinnacle" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pinnacle"
+    },
+    "ancient-wall" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ancient-wall"
+    },
+    "populated-places" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#populated-places"
+    },
+    "osm_new_mainroads_gen0" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen0"
+    },
+    "iron-mine-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#iron-mine-s-"
+    },
+    "wadi" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wadi"
+    },
+    "cultivated-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cultivated-area"
+    },
+    "rock" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rock"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "palm-grove" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#palm-grove"
+    },
+    "osm_new_landusages_gen1-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen1-area",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "economic-region" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#economic-region"
+    },
+    "dry-stream-bed" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#dry-stream-bed"
+    },
+    "continent" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#continent"
+    },
+    "public_transport" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#public_transport"
+    },
+    "capital-of-a-political-entity" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#capital-of-a-political-entity"
+    },
+    "osm_new_admin-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_admin-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "gorge-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gorge-s-"
+    },
+    "seat-of-a-third-order-administrative-division" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#seat-of-a-third-order-administrative-division"
+    },
+    "featureCodeName" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#featureCodeName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "former-inlet" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#former-inlet"
+    },
+    "shoal-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#shoal-s-"
+    },
+    "artificial-island" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#artificial-island"
+    },
+    "intermittent-salt-lakes" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intermittent-salt-lakes"
+    },
+    "railroad-siding" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#railroad-siding"
+    },
+    "geoNameId" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#geoNameId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "rock-desert" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rock-desert"
+    },
+    "homestead" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#homestead"
+    },
+    "courthouse" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#courthouse"
+    },
+    "portage" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#portage"
+    },
+    "sulphur-spring-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sulphur-spring-s-"
+    },
+    "promontory--ies-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#promontory--ies-"
+    },
+    "aeroway" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#aeroway"
+    },
+    "adminCode5" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode5",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_mainroads-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "forest-reserve" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#forest-reserve"
+    },
+    "reserve" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#reserve"
+    },
+    "place" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#place"
+    },
+    "ruined-bridge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ruined-bridge"
+    },
+    "osm_new_motorways-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "borderland" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#borderland"
+    },
+    "pass" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pass"
+    },
+    "administrative-facility" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#administrative-facility"
+    },
+    "harbor-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#harbor-s-"
+    },
+    "lake-region" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#lake-region"
+    },
+    "military-installation" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#military-installation"
+    },
+    "forest-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#forest-station"
+    },
+    "bight-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#bight-s-"
+    },
+    "bus-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#bus-station"
+    },
+    "osm_new_railways-z_order" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways-z_order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "mole" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mole"
+    },
+    "coal-mine-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#coal-mine-s-"
+    },
+    "reef" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#reef"
+    },
+    "intermittent-salt-pond-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intermittent-salt-pond-s-"
+    },
+    "resort" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#resort"
+    },
+    "abandoned-airfield" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-airfield"
+    },
+    "Nothing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Nothing"
+    },
+    "mound-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mound-s-"
+    },
+    "convent" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#convent"
+    },
+    "icecap-ridge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#icecap-ridge"
+    },
+    "boatyard" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#boatyard"
+    },
+    "Hypsographic" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"
+    },
+    "timezone" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#timezone",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "communication-center" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#communication-center"
+    },
+    "natural" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#natural"
+    },
+    "osm_new_landusages_gen0-z_order" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen0-z_order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "fossilized-forest" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fossilized-forest"
+    },
+    "ruined-dam" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ruined-dam"
+    },
+    "abandoned-mission" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-mission"
+    },
+    "osm_new_railways_gen1" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen1"
+    },
+    "historical-third-order-administrative-division" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#historical-third-order-administrative-division"
+    },
+    "heath" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#heath"
+    },
+    "fissure" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fissure"
+    },
+    "grazing-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#grazing-area"
+    },
+    "tribal-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tribal-area"
+    },
+    "adminCode1" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode1",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "tabla1" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tabla1"
+    },
+    "featureCode" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#featureCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "baling-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#baling-station"
+    },
+    "stony-desert" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#stony-desert"
+    },
+    "tongue" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tongue"
+    },
+    "language-school" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#language-school"
+    },
+    "boundary-marker" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#boundary-marker"
+    },
+    "osm_new_motorways_gen1-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen1-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "technical-school" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#technical-school"
+    },
+    "estate-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#estate-s-"
+    },
+    "osm_new_railways-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "agricultural-reserve" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#agricultural-reserve"
+    },
+    "section-of-lake" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-lake"
+    },
+    "populated-locality" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#populated-locality"
+    },
+    "osm_new_buildings-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_buildings-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_waterways-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterways-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "bay" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#bay"
+    },
+    "irrigation-canal" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#irrigation-canal"
+    },
+    "creators" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#creators"
+    },
+    "lost-river" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#lost-river"
+    },
+    "gulf" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gulf"
+    },
+    "osm_new_waterareas_gen0" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterareas_gen0"
+    },
+    "touches" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#touches",
+      "@type" : "@id"
+    },
+    "osm_new_mainroads_gen0-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen0-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "osm_new_amenities-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_amenities-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "stream-mouth-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#stream-mouth-s-"
+    },
+    "osm_new_mainroads_gen0-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen0-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_railways-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_motorways-oneway" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways-oneway",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "nunatak" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#nunatak"
+    },
+    "amphitheater" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#amphitheater"
+    },
+    "housing-development" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#housing-development"
+    },
+    "section-of-harbor" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-harbor"
+    },
+    "delta" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#delta"
+    },
+    "abandoned-well" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-well"
+    },
+    "contains" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#contains",
+      "@type" : "@id"
+    },
+    "rise" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rise"
+    },
+    "customs-post" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#customs-post"
+    },
+    "osm_new_mainroads_gen0-oneway" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen0-oneway",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "cemetery" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cemetery"
+    },
+    "elevation" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#elevation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "osm_new_motorways_gen0-oneway" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen0-oneway",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "salt-ponds" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#salt-ponds"
+    },
+    "isPartOf" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#isPartOf",
+      "@type" : "@id"
+    },
+    "seat-of-a-first-order-administrative-division" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#seat-of-a-first-order-administrative-division"
+    },
+    "pier" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pier"
+    },
+    "artillery-range" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#artillery-range"
+    },
+    "abandoned-railroad-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-railroad-station"
+    },
+    "osm_new_minorroads-bridge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_minorroads-bridge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "osm_new_railways_gen0-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen0-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "longitude" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#longitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "osm_new_minorroads-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_minorroads-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "quicksand" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#quicksand"
+    },
+    "osm_new_landusages_gen1-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen1-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "hermitage" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hermitage"
+    },
+    "overlap" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#overlap",
+      "@type" : "@id"
+    },
+    "osm_new_railways-bridge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways-bridge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "ancient-road" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ancient-road"
+    },
+    "interfluve" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#interfluve"
+    },
+    "osm_new_railways_gen0-tunnel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen0-tunnel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "cattle-dipping-tank" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cattle-dipping-tank"
+    },
+    "drainage-ditch" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#drainage-ditch"
+    },
+    "ocean" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ocean"
+    },
+    "osm_new_minorroads-tunnel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_minorroads-tunnel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "tabla2-idTabla2" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tabla2-idTabla2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "munitions-plant" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#munitions-plant"
+    },
+    "osm_new_motorways_gen0-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen0-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "flat" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#flat"
+    },
+    "water-pumping-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#water-pumping-station"
+    },
+    "section-of-wadi" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-wadi"
+    },
+    "oil-pipeline" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oil-pipeline"
+    },
+    "storehouse" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#storehouse"
+    },
+    "terrace" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#terrace"
+    },
+    "populated-place" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#populated-place"
+    },
+    "ore-treatment-plant" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ore-treatment-plant"
+    },
+    "limekiln" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#limekiln"
+    },
+    "post-office" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#post-office"
+    },
+    "fifth-order-administrative-division" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fifth-order-administrative-division"
+    },
+    "abandoned-farm" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-farm"
+    },
+    "brewery" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#brewery"
+    },
+    "route" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#route"
+    },
+    "oil-well" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oil-well"
+    },
+    "osm_new_railways_gen1-bridge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen1-bridge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "freely-associated-state" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#freely-associated-state"
+    },
+    "osm_new_mainroads_gen0-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen0-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_landusages_gen0-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen0-area",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "shelf-edge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#shelf-edge"
+    },
+    "intermittent-reservoir" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intermittent-reservoir"
+    },
+    "fishing-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fishing-area"
+    },
+    "taqs" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#taqs",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "wharf--ves-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wharf--ves-"
+    },
+    "windmill" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#windmill"
+    },
+    "isEastOf" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#isEastOf",
+      "@type" : "@id"
+    },
+    "intermittent-salt-lake" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intermittent-salt-lake"
+    },
+    "osm_new_aeroways-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_aeroways-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "leprosarium" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#leprosarium"
+    },
+    "osm_new_buildings" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_buildings"
+    },
+    "underground-irrigation-canal-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#underground-irrigation-canal-s-"
+    },
+    "ditch" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ditch"
+    },
+    "osm_new_railways_gen0-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen0-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "tabla2" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tabla2"
+    },
+    "osm_new_railways" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways"
+    },
+    "Man-made-waterways" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Man-made-waterways"
+    },
+    "osm_new_waterareas_gen1-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterareas_gen1-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "countryName" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#countryName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "NortHemisphere" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#NortHemisphere"
+    },
+    "sea" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sea"
+    },
+    "religious-center" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#religious-center"
+    },
+    "customs-house" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#customs-house"
+    },
+    "emergency" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#emergency"
+    },
+    "dockyard" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#dockyard"
+    },
+    "osm_new_mainroads_gen0-ref" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen0-ref",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "church" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#church"
+    },
+    "osm_new_motorways_gen1-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen1-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_transport_points-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_transport_points-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "osm_new_places-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_places-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "osm_new_transport_areas-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_transport_areas-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "cirque" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cirque"
+    },
+    "osm_new_railways-tunnel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways-tunnel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "whaling-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#whaling-station"
+    },
+    "isWholeOf" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#isWholeOf",
+      "@type" : "@id"
+    },
+    "lagoon" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#lagoon"
+    },
+    "narrows" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#narrows"
+    },
+    "trough" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#trough"
+    },
+    "beach" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#beach"
+    },
+    "college" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#college"
+    },
+    "quarry--ies-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#quarry--ies-"
+    },
+    "Undersea" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Undersea"
+    },
+    "patrol-post" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#patrol-post"
+    },
+    "osm_new_mainroads_gen1-z_order" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen1-z_order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "railroad-tunnel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#railroad-tunnel"
+    },
+    "heliport" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#heliport"
+    },
+    "abandoned-mine" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-mine"
+    },
+    "osm_new_waterareas" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterareas"
+    },
+    "osm_new_railways_gen1-z_order" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen1-z_order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "osm_new_landusages_gen1-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen1-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "osm_new_mainroads-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "rank" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rank",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "police-post" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#police-post"
+    },
+    "railroad" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#railroad"
+    },
+    "county" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#county"
+    },
+    "crater-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#crater-s-"
+    },
+    "mill-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mill-s-"
+    },
+    "clinic" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#clinic"
+    },
+    "osm_new_transport_points-ref" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_transport_points-ref",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "palm-tree-reserve" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#palm-tree-reserve"
+    },
+    "osm_new_mainroads_gen1-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen1-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sinkhole" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sinkhole"
+    },
+    "pan" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pan"
+    },
+    "osm_new_mainroads-ref" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads-ref",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "canyon" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#canyon"
+    },
+    "railroad-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#railroad-station"
+    },
+    "landuse" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#landuse"
+    },
+    "coconut-grove" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#coconut-grove"
+    },
+    "featureClass" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#featureClass",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "mining-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mining-area"
+    },
+    "halting-place" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#halting-place"
+    },
+    "inspection-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#inspection-station"
+    },
+    "wall" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wall"
+    },
+    "rookery" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rookery"
+    },
+    "latitude" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#latitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "osm_new_mainroads-bridge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads-bridge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "escarpment" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#escarpment"
+    },
+    "salt-evaporation-ponds" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#salt-evaporation-ponds"
+    },
+    "osm_new_mainroads_gen1-ref" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen1-ref",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "garden-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#garden-s-"
+    },
+    "park-headquarters" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#park-headquarters"
+    },
+    "osm_new_motorways_gen0-bridge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen0-bridge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "anchorage" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#anchorage"
+    },
+    "copper-mine-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#copper-mine-s-"
+    },
+    "fracture-zone" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fracture-zone"
+    },
+    "feature" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#feature",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "summary" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#summary",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "restaurant" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#restaurant"
+    },
+    "osm_new_waterareas_gen1" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterareas_gen1"
+    },
+    "bridge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#bridge"
+    },
+    "badlands" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#badlands"
+    },
+    "tabla2-isPartOf-tabla1" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tabla2-isPartOf-tabla1",
+      "@type" : "@id"
+    },
+    "lava-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#lava-area"
+    },
+    "maneuver-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#maneuver-area"
+    },
+    "shore" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#shore"
+    },
+    "athletic-field" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#athletic-field"
+    },
+    "lake-bed-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#lake-bed-s-"
+    },
+    "osm_new_mainroads_gen0-bridge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen0-bridge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "abandoned-oil-well" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-oil-well"
+    },
+    "osm_new_places-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_places-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "wadi-junction" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wadi-junction"
+    },
+    "osm_new_landusages_gen0-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen0-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "osm_new_amenities" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_amenities"
+    },
+    "monument" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#monument"
+    },
+    "osm_new_minorroads-ref" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_minorroads-ref",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "tea-plantation" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tea-plantation"
+    },
+    "meteorological-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#meteorological-station"
+    },
+    "amusement-park" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#amusement-park"
+    },
+    "town" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#town"
+    },
+    "osm_new_landusages-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "osm_new_motorways-bridge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways-bridge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "osm_new_railways_gen0-z_order" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen0-z_order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "reach" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#reach"
+    },
+    "intermittent-pond" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intermittent-pond"
+    },
+    "section-of-intermittent-stream" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-intermittent-stream"
+    },
+    "bank-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#bank-s-"
+    },
+    "fourth-order-administrative-division" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fourth-order-administrative-division"
+    },
+    "ancient-site" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ancient-site"
+    },
+    "osm_new_railways-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "crater-lakes" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#crater-lakes"
+    },
+    "name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "office" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#office"
+    },
+    "independent-political-entity" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#independent-political-entity"
+    },
+    "osm_new_amenities-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_amenities-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "weir-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#weir-s-"
+    },
+    "osm_new_minorroads-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_minorroads-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "intermittent-stream" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intermittent-stream"
+    },
+    "peaks" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#peaks"
+    },
+    "sill" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sill"
+    },
+    "sport" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sport"
+    },
+    "space-center" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#space-center"
+    },
+    "hanging-valley" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hanging-valley"
+    },
+    "monastery" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#monastery"
+    },
+    "ferry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ferry"
+    },
+    "adminCode2" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "drainage-basin" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#drainage-basin"
+    },
+    "farmstead" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#farmstead"
+    },
+    "fjord" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fjord"
+    },
+    "scrubland" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#scrubland"
+    },
+    "osm_new_admin-admin_level" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_admin-admin_level",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "style" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#style",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "dike" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#dike"
+    },
+    "museum" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#museum"
+    },
+    "osm_new_mainroads_gen1-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen1-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "casino" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#casino"
+    },
+    "osm_new_motorways_gen0-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen0-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "wkt" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wkt"
+    },
+    "road-bend" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#road-bend"
+    },
+    "osm_new_landusages-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "triangulation-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#triangulation-station"
+    },
+    "osm_new_landusages_gen1-z_order" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen1-z_order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "pond" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pond"
+    },
+    "ruin-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ruin-s-"
+    },
+    "gas-oil-separator-plant" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gas-oil-separator-plant"
+    },
+    "historical-site" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#historical-site"
+    },
+    "PopulatedPlace" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#PopulatedPlace"
+    },
+    "dairy" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#dairy"
+    },
+    "osm_new_mainroads_gen0-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen0-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "osm_new_motorways_gen0" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen0"
+    },
+    "corridor" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#corridor"
+    },
+    "osm_new_places-population" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_places-population",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "meadow" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#meadow"
+    },
+    "cape" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cape"
+    },
+    "seaplane-landing-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#seaplane-landing-area"
+    },
+    "suburb" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#suburb"
+    },
+    "osm_new_landusages" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages"
+    },
+    "osm_new_minorroads-oneway" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_minorroads-oneway",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "tabla1-idTabla2" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tabla1-idTabla2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "osm_new_railways_gen0-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen0-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "osm_new_landusages_gen0-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen0-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "united-states-government-establishment" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#united-states-government-establishment"
+    },
+    "boundingBox" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#boundingBox",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_mainroads_gen1-tunnel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen1-tunnel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "military-school" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#military-school"
+    },
+    "osm_new_mainroads-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "highway" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#highway"
+    },
+    "osm_new_mainroads_gen1-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen1-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_minorroads-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_minorroads-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_minorroads" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_minorroads"
+    },
+    "nature-reserve" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#nature-reserve"
+    },
+    "scientific-research-base" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#scientific-research-base"
+    },
+    "forest-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#forest-s-"
+    },
+    "apron" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#apron"
+    },
+    "spur-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#spur-s-"
+    },
+    "osm_new_railways_gen0-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen0-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "desert" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#desert"
+    },
+    "radio-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#radio-station"
+    },
+    "osm_new_transport_points-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_transport_points-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "historical-region" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#historical-region"
+    },
+    "aqueduct" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#aqueduct"
+    },
+    "osm_new_waterareas_gen1-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterareas_gen1-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "navigation-channel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#navigation-channel"
+    },
+    "osm_new_mainroads_gen0-tunnel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen0-tunnel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "boundary" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#boundary"
+    },
+    "peat-cutting-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#peat-cutting-area"
+    },
+    "hammock-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hammock-s-"
+    },
+    "road-junction" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#road-junction"
+    },
+    "bench" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#bench"
+    },
+    "osm_new_mainroads_gen1-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen1-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "directional" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#directional",
+      "@type" : "@id"
+    },
+    "spit" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#spit"
+    },
+    "osm_new_landusages_gen1-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen1-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "butte-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#butte-s-"
+    },
+    "osm_new_mainroads-oneway" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads-oneway",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "mesa" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mesa"
+    },
+    "copper-works" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#copper-works"
+    },
+    "tomb-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tomb-s-"
+    },
+    "oxbow-lake" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oxbow-lake"
+    },
+    "landfill" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#landfill"
+    },
+    "blowout-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#blowout-s-"
+    },
+    "adminName3" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName3",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_mainroads-tunnel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads-tunnel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "seat-of-government-of-a-political-entity" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#seat-of-government-of-a-political-entity"
+    },
+    "retreat" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#retreat"
+    },
+    "man_made" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#man_made"
+    },
+    "hospital" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hospital"
+    },
+    "osm_new_motorways_gen1" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen1"
+    },
+    "leisure" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#leisure"
+    },
+    "osm_new_landusages_gen0" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen0"
+    },
+    "osm_new_waterareas-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterareas-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "beacon" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#beacon"
+    },
+    "historical-first-order-administrative-division" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#historical-first-order-administrative-division"
+    },
+    "osm_new_admin" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_admin"
+    },
+    "wetland" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wetland"
+    },
+    "isWestOf" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#isWestOf",
+      "@type" : "@id"
+    },
+    "stadium" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#stadium"
+    },
+    "leper-colony" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#leper-colony"
+    },
+    "religious-populated-place" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#religious-populated-place"
+    },
+    "osm_new_waterareas-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterareas-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "tank-farm" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tank-farm"
+    },
+    "tabla2-nameTabla2" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tabla2-nameTabla2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_motorways-z_order" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways-z_order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "abandoned-police-post" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-police-post"
+    },
+    "reformatory" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#reformatory"
+    },
+    "osm_new_waterways-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterways-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "barrier" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#barrier"
+    },
+    "depression-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#depression-s-"
+    },
+    "salt-lakes" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#salt-lakes"
+    },
+    "cleft-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cleft-s-"
+    },
+    "intermittent-lakes" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intermittent-lakes"
+    },
+    "salt-pond" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#salt-pond"
+    },
+    "experiment-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#experiment-station"
+    },
+    "typeRelation" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#typeRelation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_landusages-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_motorways_gen1-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen1-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://www.w3.org/2002/07/owl#preferredNamespacePrefix"
+    },
+    "spa" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#spa"
+    },
+    "mesa-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mesa-s-"
+    },
+    "adminName4" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName4",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "current" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#current"
+    },
+    "medical-center" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#medical-center"
+    },
+    "spillway" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#spillway"
+    },
+    "waterfall-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#waterfall-s-"
+    },
+    "mountain" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mountain"
+    },
+    "osm_new_places-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_places-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "osm_new_landusages_gen1-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen1-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "deep" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#deep"
+    },
+    "railroad-junction" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#railroad-junction"
+    },
+    "power-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#power-station"
+    },
+    "Natural-watercourses" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Natural-watercourses"
+    },
+    "osm_new_mainroads" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads"
+    },
+    "oil-pipeline-junction" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oil-pipeline-junction"
+    },
+    "border-post" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#border-post"
+    },
+    "osm_new_aeroways-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_aeroways-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "temple-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#temple-s-"
+    },
+    "sugar-refinery" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sugar-refinery"
+    },
+    "fishponds" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fishponds"
+    },
+    "osm_new_landusages-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_transport_points-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_transport_points-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "facility" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#facility"
+    },
+    "transit-terminal" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#transit-terminal"
+    },
+    "headland" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#headland"
+    },
+    "canal-tunnel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#canal-tunnel"
+    },
+    "osm_new_waterways-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterways-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "trench" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#trench"
+    },
+    "basin" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#basin"
+    },
+    "farm" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#farm"
+    },
+    "field-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#field-s-"
+    },
+    "territory" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#territory"
+    },
+    "plain" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#plain"
+    },
+    "disjoint" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#disjoint",
+      "@type" : "@id"
+    },
+    "port" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#port"
+    },
+    "political-entity" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#political-entity"
+    },
+    "canal" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#canal"
+    },
+    "section-of-plain" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-plain"
+    },
+    "amenity" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#amenity"
+    },
+    "boulder-field" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#boulder-field"
+    },
+    "waterworks" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#waterworks"
+    },
+    "cuesta-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cuesta-s-"
+    },
+    "population" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#population",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "locality" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#locality"
+    },
+    "novitiate" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#novitiate"
+    },
+    "section-of-estate" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-estate"
+    },
+    "ridge-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ridge-s-"
+    },
+    "neighbourhood" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#neighbourhood"
+    },
+    "section-of-stream" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-stream"
+    },
+    "lighthouse" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#lighthouse"
+    },
+    "dry-dock" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#dry-dock"
+    },
+    "osm_new_waterways-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterways-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "osm_new_places-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_places-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "traffic-circle" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#traffic-circle"
+    },
+    "Vegetation" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Vegetation"
+    },
+    "ghat" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ghat"
+    },
+    "Countries" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Countries"
+    },
+    "osm_new_aeroways-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_aeroways-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "adminCode4" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode4",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_minorroads-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_minorroads-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "canalized-stream" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#canalized-stream"
+    },
+    "underground-lake" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#underground-lake"
+    },
+    "swamp" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#swamp"
+    },
+    "veterinary-facility" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#veterinary-facility"
+    },
+    "religious-site" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#religious-site"
+    },
+    "confluence" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#confluence"
+    },
+    "section-of-bank" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-bank"
+    },
+    "water-mill" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#water-mill"
+    },
+    "military-base" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#military-base"
+    },
+    "title" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "parking-lot" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#parking-lot"
+    },
+    "refugee-camp" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#refugee-camp"
+    },
+    "osm_new_transport_points-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_transport_points-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "former-sugar-mill" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#former-sugar-mill"
+    },
+    "SurtHemisphere" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SurtHemisphere"
+    },
+    "osm_new_aeroways" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_aeroways"
+    },
+    "osm_new_mainroads-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "irrigation-ditch" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#irrigation-ditch"
+    },
+    "satellite-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#satellite-station"
+    },
+    "osm_new_admin-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_admin-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "osm_new_admin-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_admin-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "anabranch" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#anabranch"
+    },
+    "grave" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#grave"
+    },
+    "square" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#square"
+    },
+    "hunting-reserve" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hunting-reserve"
+    },
+    "docking-basin" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#docking-basin"
+    },
+    "ravine-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ravine-s-"
+    },
+    "observatory" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#observatory"
+    },
+    "bush-es-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#bush-es-"
+    },
+    "causeway" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#causeway"
+    },
+    "leased-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#leased-area"
+    },
+    "agricultural-school" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#agricultural-school"
+    },
+    "osm_new_motorways_gen0-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen0-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ditch-mouth-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ditch-mouth-s-"
+    },
+    "osm_new_motorways_gen1-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen1-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "whirlpool" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#whirlpool"
+    },
+    "osm_new_mainroads_gen1-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen1-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "second-order-administrative-division" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#second-order-administrative-division"
+    },
+    "first-order-administrative-division" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#first-order-administrative-division"
+    },
+    "dock-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#dock-s-"
+    },
+    "polder" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#polder"
+    },
+    "not-available" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#not-available"
+    },
+    "tower" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tower"
+    },
+    "resthouse" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#resthouse"
+    },
+    "osm_new_motorways-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "osm_new_motorways_gen1-oneway" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen1-oneway",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "dispensary" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#dispensary"
+    },
+    "island" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#island"
+    },
+    "shop" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#shop"
+    },
+    "SpatialObject" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"
+    },
+    "intermittent-wetland" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intermittent-wetland"
+    },
+    "agricultural-facility" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#agricultural-facility"
+    },
+    "water-tank" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#water-tank"
+    },
+    "upland" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#upland"
+    },
+    "canal-bend" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#canal-bend"
+    },
+    "railroad-signal" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#railroad-signal"
+    },
+    "pyramid" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pyramid"
+    },
+    "clearing" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#clearing"
+    },
+    "osm_new_railways-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_waterways" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterways"
+    },
+    "semi-independent-political-entity" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#semi-independent-political-entity"
+    },
+    "osm_new_motorways_gen1-tunnel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen1-tunnel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "cone-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cone-s-"
+    },
+    "maritime-school" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#maritime-school"
+    },
+    "osm_new_aeroways-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_aeroways-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "hydroelectric-power-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hydroelectric-power-station"
+    },
+    "osm_new_railways_gen0-bridge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen0-bridge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "shoal" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#shoal"
+    },
+    "osm_new_minorroads-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_minorroads-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "navigation-canal-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#navigation-canal-s-"
+    },
+    "agricultural-colony" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#agricultural-colony"
+    },
+    "farm-village" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#farm-village"
+    },
+    "observation-point" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#observation-point"
+    },
+    "lock-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#lock-s-"
+    },
+    "palace" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#palace"
+    },
+    "osm_new_motorways-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "zone" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#zone"
+    },
+    "gully" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gully"
+    },
+    "mud-flat-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mud-flat-s-"
+    },
+    "arch" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#arch"
+    },
+    "edbDataProperty" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#edbDataProperty",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "building" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#building"
+    },
+    "osm_new_landusages_gen0-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen0-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "inside" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#inside",
+      "@type" : "@id"
+    },
+    "estuary" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#estuary"
+    },
+    "gravel-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gravel-area"
+    },
+    "osm_new_mainroads_gen1" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen1"
+    },
+    "stream-bank" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#stream-bank"
+    },
+    "isNorthOf" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#isNorthOf",
+      "@type" : "@id"
+    },
+    "divide" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#divide"
+    },
+    "library" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#library"
+    },
+    "moraine" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#moraine"
+    },
+    "Continent" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Continent"
+    },
+    "astronomical-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#astronomical-station"
+    },
+    "inlet" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#inlet"
+    },
+    "salt-marsh" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#salt-marsh"
+    },
+    "cliff-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cliff-s-"
+    },
+    "hut" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hut"
+    },
+    "salt-lake" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#salt-lake"
+    },
+    "osm_new_motorways-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "section-of-lagoon" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-lagoon"
+    },
+    "spring-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#spring-s-"
+    },
+    "stable" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#stable"
+    },
+    "research-institute" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#research-institute"
+    },
+    "shoals" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#shoals"
+    },
+    "osm_new_motorways_gen0-z_order" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen0-z_order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "osm_new_waterareas_gen1-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterareas_gen1-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "coast-guard-station" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#coast-guard-station"
+    },
+    "channel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#channel"
+    },
+    "continentCode" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#continentCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "airport" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#airport"
+    },
+    "interdune-trough-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#interdune-trough-s-"
+    },
+    "peak" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#peak"
+    },
+    "section-of-canal" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-canal"
+    },
+    "phosphate-works" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#phosphate-works"
+    },
+    "osm_new_transport_areas-geometry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_transport_areas-geometry",
+      "@type" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObjectXSD_Geometry"
+    },
+    "ridge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ridge"
+    },
+    "meander-neck" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#meander-neck"
+    },
+    "intermittent-pool" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intermittent-pool"
+    },
+    "abandoned-watercourse" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-watercourse"
+    },
+    "osm_new_motorways_gen1-ref" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen1-ref",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "oil-palm-plantation" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oil-palm-plantation"
+    },
+    "olive-grove" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#olive-grove"
+    },
+    "osm_new_transport_points-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_transport_points-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "local-government-office" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#local-government-office"
+    },
+    "osm_new_buildings-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_buildings-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "watercourse" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#watercourse"
+    },
+    "osm_new_transport_areas-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_transport_areas-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "tundra" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tundra"
+    },
+    "spur" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#spur"
+    },
+    "mound" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mound"
+    },
+    "aquaculture-facility" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#aquaculture-facility"
+    },
+    "osm_new_motorways_gen0-ref" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen0-ref",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "beach-ridge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#beach-ridge"
+    },
+    "osm_new_waterareas-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterareas-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "saddle" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#saddle"
+    },
+    "land-tied-island" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#land-tied-island"
+    },
+    "marine-channel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#marine-channel"
+    },
+    "osm_new_railways_gen1-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen1-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osmDataProperty" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osmDataProperty",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "osm_new_motorways_gen0-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen0-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "topological" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#topological",
+      "@type" : "@id"
+    },
+    "islet" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#islet"
+    },
+    "israeli-settlement" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#israeli-settlement"
+    },
+    "third-order-administrative-division" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#third-order-administrative-division"
+    },
+    "adminCode3" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode3",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "street" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#street"
+    },
+    "osm_new_motorways-tunnel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways-tunnel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "gold-mine-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gold-mine-s-"
+    },
+    "sub-surface-dam" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sub-surface-dam"
+    },
+    "bog-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#bog-s-"
+    },
+    "roadstead" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#roadstead"
+    },
+    "oil-refinery" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oil-refinery"
+    },
+    "oil-camp" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oil-camp"
+    },
+    "knoll" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#knoll"
+    },
+    "well" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#well"
+    },
+    "abandoned-railroad" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-railroad"
+    },
+    "strait" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#strait"
+    },
+    "mosque" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mosque"
+    },
+    "theater" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#theater"
+    },
+    "lake" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#lake"
+    },
+    "osm_new_places" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_places"
+    },
+    "waterway-installation" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#waterway-installation"
+    },
+    "peninsula" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#peninsula"
+    },
+    "asylum" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#asylum"
+    },
+    "stream-bend" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#stream-bend"
+    },
+    "parish" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#parish"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "foundry" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#foundry"
+    },
+    "osm_new_transport_areas-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_transport_areas-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "abandoned-camp" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-camp"
+    },
+    "osm_new_admin-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_admin-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "salt-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#salt-area"
+    },
+    "atomic-center" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#atomic-center"
+    },
+    "Barriers-on-waterways" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Barriers-on-waterways"
+    },
+    "icecap" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#icecap"
+    },
+    "language" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#language",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "equal" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#equal",
+      "@type" : "@id"
+    },
+    "plateau" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#plateau"
+    },
+    "slope-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#slope-s-"
+    },
+    "osm_new_railways_gen1-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen1-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "osm_new_railways-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hotel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hotel"
+    },
+    "landing" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#landing"
+    },
+    "fan-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fan-s-"
+    },
+    "section-of-independent-political-entity" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-independent-political-entity"
+    },
+    "furrow" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#furrow"
+    },
+    "rubber-plantation" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rubber-plantation"
+    },
+    "marina" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#marina"
+    },
+    "hill" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hill"
+    },
+    "oasis--es-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oasis--es-"
+    },
+    "house-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#house-s-"
+    },
+    "coast" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#coast"
+    },
+    "university-prep-school" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#university-prep-school"
+    },
+    "community-center" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#community-center"
+    },
+    "headwaters" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#headwaters"
+    },
+    "osm_new_motorways_gen0-tunnel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen0-tunnel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "pool-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pool-s-"
+    },
+    "osm_new_mainroads_gen1-oneway" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen1-oneway",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "gasfield" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gasfield"
+    },
+    "automatic-teller-machine" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#automatic-teller-machine"
+    },
+    "plain-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#plain-s-"
+    },
+    "salt-mine-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#salt-mine-s-"
+    },
+    "railway" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#railway"
+    },
+    "quay" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#quay"
+    },
+    "fort" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fort"
+    },
+    "cave-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cave-s-"
+    },
+    "osm_new_mainroads_gen0-z_order" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen0-z_order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "ford" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ford"
+    },
+    "adminName1" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName1",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "radio-observatory" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#radio-observatory"
+    },
+    "moat" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#moat"
+    },
+    "alternateNames" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#alternateNames",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_motorways" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways"
+    },
+    "wadi-bend" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wadi-bend"
+    },
+    "prison" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#prison"
+    },
+    "mining-camp" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mining-camp"
+    },
+    "olive-oil-mill" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#olive-oil-mill"
+    },
+    "zoo" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#zoo"
+    },
+    "barracks" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#barracks"
+    },
+    "cannery" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cannery"
+    },
+    "osm_new_places-z_order" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_places-z_order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "administrative-division" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#administrative-division"
+    },
+    "ledge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ledge"
+    },
+    "cutoff" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cutoff"
+    },
+    "osm_new_mainroads_gen1-bridge" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_mainroads_gen1-bridge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "osm_new_motorways_gen0-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen0-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "osm_new_landusages_gen1" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen1"
+    },
+    "tourism" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tourism"
+    },
+    "golf-course" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#golf-course"
+    },
+    "abandoned-railroad-stop" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-railroad-stop"
+    },
+    "mall" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mall"
+    },
+    "lake-channel-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#lake-channel-s-"
+    },
+    "tidal-flat-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tidal-flat-s-"
+    },
+    "volcano" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#volcano"
+    },
+    "temp-work-office" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#temp-work-office"
+    },
+    "hot-spring-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hot-spring-s-"
+    },
+    "osm_new_waterareas_gen1-osm_id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterareas_gen1-osm_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "burial-cave-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#burial-cave-s-"
+    },
+    "featureClassName" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#featureClassName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"
+    },
+    "intermittent-ponds" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intermittent-ponds"
+    },
+    "osm_new_admin-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_admin-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isSouthOf" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#isSouthOf",
+      "@type" : "@id"
+    },
+    "store" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#store"
+    },
+    "intersects" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intersects",
+      "@type" : "@id"
+    },
+    "wikipediaDataProperty" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wikipediaDataProperty",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "pagoda" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pagoda"
+    },
+    "seamount" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#seamount"
+    },
+    "osm_new_transport_points" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_transport_points"
+    },
+    "fuel-depot" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fuel-depot"
+    },
+    "State-Exam-Prep-Centre" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#State-Exam-Prep-Centre"
+    },
+    "dependent-political-entity" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#dependent-political-entity"
+    },
+    "osm_new_landusages_gen0-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen0-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "concession-area" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#concession-area"
+    },
+    "seat-of-a-second-order-administrative-division" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#seat-of-a-second-order-administrative-division"
+    },
+    "osm_new_motorways-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "market" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#market"
+    },
+    "osm_new_railways_gen0-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen0-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "bank" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#bank"
+    },
+    "oilfield" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oilfield"
+    },
+    "mereological" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mereological",
+      "@type" : "@id"
+    },
+    "osm_new_railways_gen0" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_railways_gen0"
+    },
+    "isNearOf" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#isNearOf",
+      "@type" : "@id"
+    },
+    "historical-administrative-division" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#historical-administrative-division"
+    },
+    "office-building" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#office-building"
+    },
+    "natural-tunnel" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#natural-tunnel"
+    },
+    "section-of-valley" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-valley"
+    },
+    "buffer-zone" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#buffer-zone"
+    },
+    "point" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#point"
+    },
+    "destroyed-populated-place" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#destroyed-populated-place"
+    },
+    "nursery--ies-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#nursery--ies-"
+    },
+    "snowfield" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#snowfield"
+    },
+    "petroleum-basin" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#petroleum-basin"
+    },
+    "glacier-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#glacier-s-"
+    },
+    "road-cut" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#road-cut"
+    },
+    "section-of-populated-place" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-populated-place"
+    },
+    "osm_new_amenities-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_amenities-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "idOSM" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#idOSM",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "description" : {
+      "@id" : "http://www.w3.org/2002/07/owl#description"
+    },
+    "common" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#common"
+    },
+    "osm_new_landusages_gen1-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen1-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "coalfield" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#coalfield"
+    },
+    "distributary--ies-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#distributary--ies-"
+    },
+    "military" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#military"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://www.w3.org/2002/07/owl#preferredNamespaceUri"
+    },
+    "orchard-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#orchard-s-"
+    },
+    "osm_new_buildings-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_buildings-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "country-house" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#country-house"
+    },
+    "school" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#school"
+    },
+    "wadi-mouth" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wadi-mouth"
+    },
+    "osm_new_places-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_places-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "abandoned-prison" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-prison"
+    },
+    "reservoir-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#reservoir-s-"
+    },
+    "geyser" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#geyser"
+    },
+    "osm_new_motorways_gen1-z_order" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_motorways_gen1-z_order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "bus-stop" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#bus-stop"
+    },
+    "mine-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mine-s-"
+    },
+    "nunataks" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#nunataks"
+    },
+    "dune-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#dune-s-"
+    },
+    "osm_new_landusages_gen0-name" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_landusages_gen0-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "coral-reef-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#coral-reef-s-"
+    },
+    "building-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#building-s-"
+    },
+    "osm_new_waterareas-type" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterareas-type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "naval-base" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#naval-base"
+    },
+    "tablemount" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tablemount"
+    },
+    "isFarOf" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#isFarOf",
+      "@type" : "@id"
+    },
+    "osm_new_waterareas-id" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osm_new_waterareas-id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "isthmus" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#isthmus"
+    },
+    "gonameDataProperty" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gonameDataProperty",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "shelf-valley" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#shelf-valley"
+    },
+    "shrine" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#shrine"
+    },
+    "rockfall" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rockfall"
+    },
+    "section-of-peninsula" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-peninsula"
+    },
+    "railroad-stop" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#railroad-stop"
+    },
+    "cordillera" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cordillera"
+    },
+    "vineyard" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#vineyard"
+    },
+    "drainage-canal" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#drainage-canal"
+    },
+    "tidal-creek-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tidal-creek-s-"
+    },
+    "section-of-island" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-island"
+    },
+    "sugar-plantation" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sugar-plantation"
+    },
+    "cove-s-" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cove-s-"
+    },
+    "sawmill" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sawmill"
+    },
+    "icecap-depression" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#icecap-depression"
+    },
+    "historical-political-entity" : {
+      "@id" : "http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#historical-political-entity"
+    }
+  }
+}
